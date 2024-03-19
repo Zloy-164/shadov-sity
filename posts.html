@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<body background="2.jpeg"></body>
+    <head>
+        <meta charset="UTF-8">
+        <title>POSTS</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="src/functions.js"></script>
+    </head>
+    <body>
+        <div class="hdfrm">
+            <button><a href="index.html">Добавить пост...</a></button>
+        </div>
+        <div id="post_list">
+            <!--POST LIST-->
+        </div>
+
+        <script>
+            window.addEventListener("load", function() {
+                loadPosts();
+                afterInit();
+                registerListeners();
+            });
+            window.addEventListener("unload", function() {
+                const elems = document.getElementsByClassName("input_elem")
+                var idx = 0;
+                for (const elem of elems){
+                    const val = elem.value;
+                    posts[idx] = val;
+                    idx ++;
+                }
+                save();
+            });
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+.post_div{
+    margin: 8px;
+}
+.input_elem_div{
+    margin-bottom: 8px;
+}
+.hdfrm button a {
+    text-decoration: none;
+    color: black;
+}
+hr.solid {
+    border-top: 3px solid #bbb;
+}
+.input_elem{
+    width: 100%;
+}
+
+/*index.html styles*/
+#firstInput{
+    width: 99%;
+    min-height: 100px;
+}
+#submitButton{
+    padding: 8px;
+}
+.fire{
+    width: 20px;
+    height: 20px;
+}
+body{
+    margin-right: 8px;
+}

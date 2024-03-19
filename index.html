@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Page#1</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="src/functions.js"></script>
+        
+    </head>
+    <body background="1.jpeg">
+        <p style="border:3px #00B344  solid; width:175px;">Сайт для публикации стихов и тд v.1.0.0
+            Владелец на самом деле нифига не <a href="https://t.me/Zloy_164">@Zloy_164</a> <img class="fire" src="fire_in_the_hole.png">
+            </p>
+        <form action="posts.html">
+            <textarea id="firstInput"></textarea>
+            <br>
+            <input id="submitButton" type="submit" value="Опубликовать">
+        </form>
+        <script>
+            let btn = document.getElementById("submitButton");
+            btn.addEventListener("click", function(e) {
+                val = document.getElementById("firstInput").value;
+                posts.push(val);
+                localStorage.setItem("jsondata_posts", JSON.stringify(posts));
+            });
+            afterInit();
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </html>
